@@ -7,7 +7,7 @@ namespace Vidly.Models
     public class Customer
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public byte Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         [StringLength(255)]

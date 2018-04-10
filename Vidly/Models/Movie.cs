@@ -5,7 +5,7 @@ namespace Vidly.Models
 {
     public class Movie
     {
-        public byte Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         [StringLength(255)]
@@ -18,9 +18,11 @@ namespace Vidly.Models
         public byte GenreId { get; set; }
 
         [Required]
+        [Display(Name = "Release Date")]
         public DateTime ReleaseDate { get; set; }
 
         [Required]
+        [Display(Name = "Date Added")]
         public DateTime DateAdded { get; set; }
 
         public byte NumberInStock { get; set; }

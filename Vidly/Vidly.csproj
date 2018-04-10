@@ -251,6 +251,10 @@
     <Compile Include="Migrations\201804100139421_AddAttributeToCustomerID.Designer.cs">
       <DependentUpon>201804100139421_AddAttributeToCustomerID.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804100238227_ChangeIdsToInts.cs" />
+    <Compile Include="Migrations\201804100238227_ChangeIdsToInts.Designer.cs">
+      <DependentUpon>201804100238227_ChangeIdsToInts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -380,6 +384,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804100139421_AddAttributeToCustomerID.resx">
       <DependentUpon>201804100139421_AddAttributeToCustomerID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804100238227_ChangeIdsToInts.resx">
+      <DependentUpon>201804100238227_ChangeIdsToInts.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
