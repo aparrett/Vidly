@@ -13,11 +13,11 @@ namespace Vidly.Models
 
         public Genre Genre { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "A genre is required.")]
         [Display(Name = "Genre")]
         public int GenreId { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "A release date is required.")]
         [Display(Name = "Release Date")]
         public DateTime ReleaseDate { get; set; }
 
