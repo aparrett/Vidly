@@ -23,18 +23,17 @@
     <script>
         $(document).ready(function() {
             $("#customers .js-delete").on("click", function() {
-                var confirmation = confirm("Are you sure you want to delete this customer");
                 var $button = $(this);
 
-                if (confirmation) {
+                bootbox.confirm("Are you sure you want to delete this customer", function() {
                     $.ajax({
                         url: "/api/customers/" + $button.attr("data-customer-id"),
                         method: "DELETE",
-                        success: function() {
+                        success: function () {
                             $button.closest("tr").remove();
                         }
                     });
-                }
+                });
             });
         });
     </script>
