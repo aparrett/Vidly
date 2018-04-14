@@ -206,6 +206,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\API\CustomersController.cs" />
     <Compile Include="Controllers\API\MoviesController.cs" />
+    <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -227,8 +228,13 @@
     <Compile Include="Migrations\201804132312161_SeedUsers.Designer.cs">
       <DependentUpon>201804132312161_SeedUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804140327158_AddBooks.cs" />
+    <Compile Include="Migrations\201804140327158_AddBooks.Designer.cs">
+      <DependentUpon>201804140327158_AddBooks.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -311,6 +317,8 @@
     <Content Include="Views\Customers\CustomerForm.cshtml" />
     <Content Include="Views\Movies\MovieForm.cshtml" />
     <Content Include="Views\Movies\ReadOnlyList.cshtml" />
+    <Content Include="Views\Books\Index.cshtml" />
+    <Content Include="Views\Books\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -337,6 +345,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804132312161_SeedUsers.resx">
       <DependentUpon>201804132312161_SeedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804140327158_AddBooks.resx">
+      <DependentUpon>201804140327158_AddBooks.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
